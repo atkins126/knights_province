@@ -2,7 +2,7 @@
 
 // General settings
 !RANKING 0 // Disabled
-!HANDS_COUNT 5
+!HANDS_COUNT 6
 !HAND_DEFAULT_HUMAN 0
 
 // Hands
@@ -25,10 +25,6 @@
 !SET_AI_AUTO_REPAIR
 !SET_AI_CHARACTER SERFS_PER_10_HOUSES 10
 !SET_AI_CHARACTER BUILDERS_COUNT 16
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 18 30 // militia
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 19 60 // axefighter
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 20 30 // swordsman
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 21 60 // bowman
 
 // Alliances
 !SET_ALLIANCE 1 0
@@ -36,7 +32,7 @@
 !SET_ALLIANCE 3 0
 
 // Grant/Block houses
-!HOUSE_BLOCK 23 // SiegeWorkshop
+!HOUSE_BLOCK 23 // siegeWorkshop
 !HOUSE_BLOCK 29 // marketplace
 
 // Block units
@@ -97,10 +93,6 @@
 !SET_AI_AUTO_REPAIR
 !SET_AI_CHARACTER SERFS_PER_10_HOUSES 10
 !SET_AI_CHARACTER BUILDERS_COUNT 16
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 18 30 // militia
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 19 60 // axefighter
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 20 30 // swordsman
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 21 60 // bowman
 
 // Alliances
 !SET_ALLIANCE 0 0
@@ -108,7 +100,7 @@
 !SET_ALLIANCE 3 0
 
 // Grant/Block houses
-!HOUSE_BLOCK 23 // SiegeWorkshop
+!HOUSE_BLOCK 23 // siegeWorkshop
 !HOUSE_BLOCK 29 // marketplace
 
 // Block units
@@ -168,10 +160,6 @@
 !SET_AI_AUTO_REPAIR
 !SET_AI_CHARACTER SERFS_PER_10_HOUSES 10
 !SET_AI_CHARACTER BUILDERS_COUNT 16
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 18 30 // militia
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 19 60 // axefighter
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 20 30 // swordsman
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 21 60 // bowman
 
 // Alliances
 !SET_ALLIANCE 0 0
@@ -179,7 +167,7 @@
 !SET_ALLIANCE 3 0
 
 // Grant/Block houses
-!HOUSE_BLOCK 23 // SiegeWorkshop
+!HOUSE_BLOCK 23 // siegeWorkshop
 !HOUSE_BLOCK 29 // marketplace
 
 // Block units
@@ -240,10 +228,6 @@
 !SET_AI_AUTO_REPAIR
 !SET_AI_CHARACTER SERFS_PER_10_HOUSES 10
 !SET_AI_CHARACTER BUILDERS_COUNT 16
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 18 30 // militia
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 19 60 // axefighter
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 20 30 // swordsman
-!SET_AI_CHARACTER ARMY_EQUIP_RATE 21 60 // bowman
 
 // Alliances
 !SET_ALLIANCE 0 0
@@ -251,7 +235,7 @@
 !SET_ALLIANCE 2 0
 
 // Grant/Block houses
-!HOUSE_BLOCK 23 // SiegeWorkshop
+!HOUSE_BLOCK 23 // siegeWorkshop
 !HOUSE_BLOCK 29 // marketplace
 
 // Block units
@@ -295,18 +279,10 @@
 
 -----Hand4-----
 !HAND_CURRENT 4
-!HAND_NEUTRAL_TYPE 1 // Hostile
+!HAND_NEUTRAL_TYPE 0 // Inert
 !HAND_ACTIVATE
 
 // Fog of War
-
-// Houses
-!SET_HOUSE 39 70 91 0 // bearsden
-!SET_HOUSE 38 75 32 1 // wolfsden
-!SET_HOUSE 38 65 31 0 // wolfsden
-!SET_HOUSE 39 70 38 1 // bearsden
-!SET_HOUSE 38 65 96 0 // wolfsden
-!SET_HOUSE 38 74 96 1 // wolfsden
 
 // Roads and fields
 
@@ -320,5 +296,26 @@
 !SET_UNIT 32 71 35 // wagon
 !SET_UNIT_WARE 20 6
 
+-----Hand5-----
+!HAND_CURRENT 5
+!HAND_NEUTRAL_TYPE 1 // Hostile
+!HAND_ACTIVATE
 
-// This mission was made with Map Editor of "Knights Province. Alpha 11 wip r8908 (2020.04.26 09:01)"  on 28.04.2020 22:41:22
+// Fog of War
+
+// Houses
+!SET_HOUSE 39 70 91 0 // bearsDen
+!SET_HOUSE 38 75 32 1 // wolfsDen
+!SET_HOUSE 38 65 31 0 // wolfsDen
+!SET_HOUSE 39 70 38 1 // bearsDen
+!SET_HOUSE 38 65 96 0 // wolfsDen
+!SET_HOUSE 38 74 96 1 // wolfsDen
+
+// Roads and fields
+
+
+// Fences
+
+
+
+// This mission was made with Map Editor of "Knights Province. Alpha 12 wip r10546 (2021.08.25 17:42)"  on 25.08.2021 17:43:05

@@ -1,11 +1,12 @@
 !VERSION 3
 
 // General settings
-!HANDS_COUNT 3
+!RANKING 0 // Disabled
+!HANDS_COUNT 5
 !HAND_DEFAULT_HUMAN 2
 
 // Hands
-----------
+-----Hand0-----
 !HAND_CURRENT 0
 !HAND_ALLOW_AI
 !HAND_ACTIVATE
@@ -13,13 +14,15 @@
 !HAND_COLOR 460799
 !HAND_CENTER_SCREEN 20 34
 
+// Fog of War
+
 // Goals
 
 // AI
 !SET_AI_AUTO_DEFEND
 !SET_AI_AUTO_REPAIR
-!SET_AI_CHARACTER SERFS_PER_10_HOUSES 10
-!SET_AI_CHARACTER BUILDERS_COUNT 12
+!SET_AI_CHARACTER SERFS_PER_10_HOUSES 8
+!SET_AI_CHARACTER BUILDERS_COUNT 15
 !SET_AI_CHARACTER ARMY_EQUIP_RATE 18 60 // militia
 !SET_AI_CHARACTER ARMY_EQUIP_RATE 19 60 // axefighter
 !SET_AI_CHARACTER ARMY_EQUIP_RATE 23 40 // pikeman
@@ -29,8 +32,8 @@
 !SET_ALLIANCE 2 1
 
 // Grant/Block houses
-!HOUSE_BLOCK 23
-!HOUSE_BLOCK 29
+!HOUSE_BLOCK 23 // siegeWorkshop
+!HOUSE_BLOCK 29 // marketplace
 
 // Block units
 
@@ -55,6 +58,9 @@
 !SET_ROAD 22 34 !SET_ROAD 23 34 !SET_ROAD 24 34 !SET_ROAD 25 34
 !SET_ROAD 25 35 !SET_ROAD 25 36 !SET_ROAD 25 37
 
+// Fences
+
+
 // Units
 !SET_UNIT 2 17 35 // serf
 !SET_UNIT 2 18 35 // serf
@@ -66,16 +72,19 @@
 !SET_UNIT 1 18 34 // blank
 !SET_UNIT 1 21 34 // blank
 !SET_UNIT 1 22 34 // blank
-// Groups
-!SET_GROUP 19 26 31 3 3 6
 
-----------
+// Groups
+!SET_GROUP 19 26 31 3 3 6 // axefighter
+
+-----Hand1-----
 !HAND_CURRENT 1
 !HAND_ALLOW_AI
 !HAND_ACTIVATE
 !HAND_AI_CHARACTER 0
 !HAND_COLOR 14924635
 !HAND_CENTER_SCREEN 67 20
+
+// Fog of War
 
 // Goals
 
@@ -89,8 +98,8 @@
 !SET_ALLIANCE 2 1
 
 // Grant/Block houses
-!HOUSE_BLOCK 23
-!HOUSE_BLOCK 29
+!HOUSE_BLOCK 23 // siegeWorkshop
+!HOUSE_BLOCK 29 // marketplace
 
 // Block units
 
@@ -98,20 +107,25 @@
 
 // Houses
 !SET_HOUSE 9 67 20 0 // woodcutters
-!SET_HOUSE 9 59 42 1 // woodcutters
-!SET_HOUSE 9 61 55 1 // woodcutters
+!SET_HOUSE 9 60 42 1 // woodcutters
+!SET_HOUSE 9 62 55 1 // woodcutters
 
 // Roads and fields
 
-!SET_ROAD 67 20 !SET_ROAD 59 42 !SET_ROAD 61 55
+!SET_ROAD 67 20 !SET_ROAD 59 42 !SET_ROAD 60 42 !SET_ROAD 61 55
+!SET_ROAD 62 55
+
+// Fences
 
 
-----------
+-----Hand2-----
 !HAND_CURRENT 2
 !HAND_ALLOW_HUMAN
 !HAND_ACTIVATE
 !HAND_COLOR 524287
 !HAND_CENTER_SCREEN 20 34
+
+// Fog of War
 
 // Goals
 
@@ -125,8 +139,8 @@
 !SET_ALLIANCE 1 1
 
 // Grant/Block houses
-!HOUSE_BLOCK 23
-!HOUSE_BLOCK 29
+!HOUSE_BLOCK 23 // siegeWorkshop
+!HOUSE_BLOCK 29 // marketplace
 
 // Block units
 
@@ -139,9 +153,37 @@
 
 !SET_ROAD 3 77 !SET_ROAD 2 78 !SET_ROAD 3 78 !SET_ROAD 4 78
 
+// Fences
+
+
+-----Hand3-----
+!HAND_CURRENT 3
+!HAND_NEUTRAL_TYPE 0 // Inert
+!HAND_ACTIVATE
+
+// Fog of War
+
+// Roads and fields
+
+
+// Fences
+
+
+-----Hand4-----
+!HAND_CURRENT 4
+!HAND_NEUTRAL_TYPE 1 // Hostile
+!HAND_ACTIVATE
+
+// Fog of War
+
+// Roads and fields
+
+
+// Fences
 
 
 // Triggers
 !SET_TRIGGER 1 58 44 60 52
 
-// This mission was made with Map Editor of "Knights Province. Alpha 11 wip r7678 (2019.07.24 19:36)"  on 24.07.2019 19:38:09
+
+// This mission was made with Map Editor of "Knights Province. Alpha 12 wip r11025 (2022.01.30 21:41)"  on 30.01.2022 22:09:27

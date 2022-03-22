@@ -44,10 +44,9 @@ var
   P2Units : Array of Integer;
   BlankCount : Integer;
   I : Integer;
-
 begin
   if aTick = 2 then
-    Actions.PlayerMessageWithButtons(HUMAN_ID, '<$3>', ['Confirm'], [''], [1], False, False); // Message about controls
+    Actions.PlayerMessageWithButtons(HUMAN_ID, '<$3>', ['Confirm'], [''], [1], False, False, False); // Message about controls
 
   // check if the knights are grouped up
   if (Length(States.PlayerGetAllGroups(0)) = 1) and GroupUpAvailable then
@@ -120,7 +119,6 @@ var
   P3Houses : Array of Integer;
   P4Houses : Array of Integer;
   TheCamp : Integer;
-
 begin
   // meet the brother
   if (aTriggerId = 1) and (States.UnitOwner(aUnit) = HUMAN_ID) and BrotherAvailable then
@@ -211,8 +209,8 @@ begin
     begin
       Actions.PlayerMessage(HUMAN_ID, '<$9>', True); // message about the cropfields and the storehouse
       Actions.PlayerObjectiveUpdateText(HUMAN_ID, MAIN_OBJ, 'Rebuild the cropfields and build a storage');
-      Actions.HouseAllow(HUMAN_ID, htStore, True);
-      Actions.HouseUnlock(HUMAN_ID, htStore);
+      Actions.PlayerHouseBlock(HUMAN_ID, htStore, False);
+      Actions.PlayerHouseGrant(HUMAN_ID, htStore, True);
       StorehouseAvailable := True;
       CiviliansAvailable := False;
     end;
@@ -225,10 +223,10 @@ begin
   begin
     Actions.PlayerMessage(HUMAN_ID, '<$10>', True); // message about the bread, mill, and bakery
     StorehouseAvailable := False;
-    Actions.HouseAllow(HUMAN_ID, htBakery, True);
-    Actions.HouseUnlock(HUMAN_ID, htBakery);
-    Actions.HouseAllow(HUMAN_ID, htMill, True);
-    Actions.HouseUnlock(HUMAN_ID, htMill);
+    Actions.PlayerHouseBlock(HUMAN_ID, htBakery, False);
+    Actions.PlayerHouseGrant(HUMAN_ID, htBakery, True);
+    Actions.PlayerHouseBlock(HUMAN_ID, htMill, False);
+    Actions.PlayerHouseGrant(HUMAN_ID, htMill, True);
     FinishAvailable := True;
   end;
 end;
